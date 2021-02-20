@@ -1,16 +1,21 @@
 package com.andorid.mytodolist
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.andorid.mytodolist.database.TaskTodo
-import com.andorid.mytodolist.database.model.TasksDao
-import com.andorid.mytodolist.database.model.TasktodoDataBase
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        TasktodoDataBase.getInstance(this)
-            .tasksDao()
+        add_btn.setOnClickListener {
+            openAddActitvtiy()
+        }
+    }
+
+    private fun openAddActitvtiy() {
+       val intent= Intent(this,Add_Actitvity::class.java)
+        startActivity(intent)
     }
 }
