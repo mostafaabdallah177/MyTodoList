@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/offwhite"
     android:padding="12sp"
     android:layout_height="match_parent"
     tools:context=".Add_Actitvity"
@@ -16,9 +17,8 @@
         android:layout_height="wrap_content">
         <EditText
             android:layout_width="match_parent"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:padding="15sp"
-            android:background="@color/pink"
             android:layout_height="wrap_content"
             android:hint="Title"
             />
@@ -29,12 +29,11 @@
         android:layout_height="wrap_content">
         <EditText
             android:layout_marginTop="20sp"
-            android:background="@color/pink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Desriptions"
             android:lines="7"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:gravity="top"
 
             />
@@ -43,6 +42,7 @@
     android:id="@+id/isComplet"
     android:layout_width="match_parent"
     android:layout_marginTop="20sp"
+    android:textScaleX="3"
     android:layout_height="wrap_content"
     android:padding="20sp"
     android:text="IsCompleted"
@@ -55,10 +55,11 @@
         android:layout_marginTop="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textScaleX="3"
         android:text="Save"
         android:textColor="@color/black"
         android:padding="20sp"
-        android:background="@color/labny"
+        android:background="@color/blue"
         />
 
 </LinearLayout>
