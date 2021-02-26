@@ -55,7 +55,6 @@ class Add_Actitvity : AppCompatActivity() {
     private fun addtask() {
         if (!Vailddata()) return
         // code to add the task into databdase
-
             var task = Task(
                 titleTask = titlelayout.editText?.text.toString(),
                 DescripitonTask = desclayout.editText?.text.toString(),
